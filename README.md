@@ -6,8 +6,8 @@ Example usage:
 ```
 <GraphqlCodeBlock
   className="GraphQLCodeBlock"
-  queryBody="query getData($eventId: Int!) {event(id: $eventId) {name,... eventFields ... on Event{attendees(first: 5)}}}"
+  src="query getData($eventId: Int!) {event(id: $eventId) {name,... eventFields ... on Event{attendees(first: 5)}}}"
 />
 ```
 
-The components only takes two props: `className` and `queryBody`, `queryBody` being a graphql query string (unformatted ok). If you add the class `GraphqlCodeBlock`, you will get some default css. Else, you can write your own css for highlighting certain syntax.
+The components only takes two props: `className` and `src`, `src` being a graphql query string (unformatted ok). If you add the class `GraphQLCodeBlock`, you will get some default css. Else, you can write your own css for highlighting certain syntax.
